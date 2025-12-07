@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+body{
+    background-color: black;
+}
+.cat-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  .head{
+    width: 150px;
+    height: 150px;
+    background: #D9822B;
+    border-radius: 50%;
+    position: relative;
+  }
+ .right-ear {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 50px solid #D9822B; /* matches head color */
+  top: -25px;  /* moves ear above head */
+  right: 0;    /* right side */
+  transform: rotate(30deg);
+}
+ .left-ear {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 40px solid transparent;
+  border-left: 0 solid transparent;
+  border-bottom: 50px solid #D9822B; /* matches head color */
+  top: -25px;  /* moves ear above head */
+  left: 0;    /* right side */
+  transform: rotate(-30deg);
+}
